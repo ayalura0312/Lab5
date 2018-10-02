@@ -30,9 +30,51 @@ public class BankAccount {
         /*
          * Implement this function
          */
+        Bank.totalAccounts++;
     }
 
     /*
      * Implement getters and setters as appropriate for private variables.
      */
+    /**
+     * @param setName sets the name
+     */
+    public void setOwnerName(final String setName) {
+        this.ownerName = setName;
+    }
+
+    /**
+     * @param setAccountBalance sets the the account balance
+     */
+    public void setAccountBalance(final double setAccountBalance) {
+        this.accountBalance = setAccountBalance;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    /**
+     *
+     * @return
+     */
+    public double getAccountBalance() {
+        return accountBalance;
+    }
+    /**
+     *
+     */
+    public double getInterestRate() {
+        return interestRate;
+    }
+    /**
+     *
+     */
+    public double getInterestEarned() {
+        return interestEarned;
+    }
 }
